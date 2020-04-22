@@ -1,0 +1,6 @@
+coverage
+.npm
+.idea
+
+# package directories
+node_modules

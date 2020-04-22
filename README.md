@@ -1,0 +1,1 @@
+# Adapter Mongo Lite
