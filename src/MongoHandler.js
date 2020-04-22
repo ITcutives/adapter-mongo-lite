@@ -255,7 +255,7 @@ class MongoHandler {
     return final;
   }
 
-  async query(table, condition, select, order, from = 0, limit = 100) {
+  async query({ table, condition, select, order, from = 0, limit = 100 }) {
     condition = await this.conditionBuilder(condition);
     select = MongoHandler.getSelectFields(select);
     order = MongoHandler.getOrderByFields(order);
