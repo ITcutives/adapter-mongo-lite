@@ -136,6 +136,7 @@ class MongoHandler {
     return field === 'id' ? '_id' : field;
   }
 
+  // eslint-disable-next-line class-methods-use-this
   conditionBuilder(conditions = []) {
     let opr;
     let condition;
@@ -255,7 +256,14 @@ class MongoHandler {
     return final;
   }
 
-  async query({ table, condition, select, order, from = 0, limit = 100 }) {
+  async query({
+    table,
+    condition,
+    select,
+    order,
+    from = 0,
+    limit = 100,
+  }) {
     condition = await this.conditionBuilder(condition);
     select = MongoHandler.getSelectFields(select);
     order = MongoHandler.getOrderByFields(order);
