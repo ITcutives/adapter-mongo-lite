@@ -1,6 +1,6 @@
 {
   "name": "@itcutives/adapter-mongo-lite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MongoDB Query Builder",
   "main": "index.js",
   "scripts": {
